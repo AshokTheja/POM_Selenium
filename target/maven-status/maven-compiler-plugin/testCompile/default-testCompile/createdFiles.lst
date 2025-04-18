@@ -1,0 +1,4 @@
+com\Sauce\Tests\TC_Sauce_TestFilterNameZtoA.class
+com\Sauce\Tests\TC_Sauce_TestFilterNameAtoZ.class
+com\Sauce\Tests\TC_Sauce_TestFilterPriceLowtoHigh.class
+com\Sauce\Tests\TC_Sauce_TestFilterPriceHightoLow.class

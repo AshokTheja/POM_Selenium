@@ -26,7 +26,7 @@ public class TC_Sauce_TestFilterNameZtoA extends TestBase {
 	@BeforeMethod
 	public void setUp() throws IOException {
 
-		System.out.println("Setup Started");
+		System.out.println("Setup Started: TC_Sauce_TestFilterNameZtoA");
 
 		Test_Utils data = new Test_Utils();
 		reqTCDataList = (ArrayList<String>) data.getTestDataByTestCaseName(this.getClass().getSimpleName());
@@ -40,6 +40,8 @@ public class TC_Sauce_TestFilterNameZtoA extends TestBase {
 	@SuppressWarnings("unchecked")
 	@Test
 	public void test_FilterNameAtoZ() throws IOException {
+		
+		System.out.println("Test Started: TC_Sauce_TestFilterNameZtoA");
 
 		String expectedURL = reqTCDataList.get(1);
 		String filter = reqTCDataList.get(2);
@@ -65,11 +67,8 @@ public class TC_Sauce_TestFilterNameZtoA extends TestBase {
 	@AfterMethod
 	public void tearDown() throws InterruptedException {
 
-		Thread.sleep(5000);
-		System.out.println("tearDown Started");
-
-		if (driver != null)
-			driver.quit();
+		System.out.println("TearDown Started: TC_Sauce_TestFilterNameZtoA");
+		quitDriver();
 
 	}
 

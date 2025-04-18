@@ -16,9 +16,9 @@
       </class> <!-- com.Sauce.Tests.TC_Sauce_TestFilterNameAtoZ -->
       <class name="com.Sauce.Tests.TC_Sauce_TestFilterNameZtoA">
         <methods>
+          <include name="test_FilterNameAtoZ"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="testHere"/>
         </methods>
       </class> <!-- com.Sauce.Tests.TC_Sauce_TestFilterNameZtoA -->
     </classes>

@@ -10,7 +10,6 @@ import com.Sauce.Test_Base.TestBase;
 public class ExtentTestListener extends TestBase implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
-		
 
 		ExtentReportManager.test = ExtentReportManager.getReporter().createTest(result.getMethod().getMethodName());
 	}

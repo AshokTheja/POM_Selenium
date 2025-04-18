@@ -26,7 +26,7 @@ public class TC_Sauce_TestFilterNameAtoZ extends TestBase {
 	@BeforeMethod
 	public void setUp() throws IOException {
 
-		System.out.println("Setup Started");
+		System.out.println("Setup Started: TC_Sauce_TestFilterNameAtoZ");
 
 		Test_Utils data = new Test_Utils();
 		reqTCDataList = (ArrayList<String>) data.getTestDataByTestCaseName("TC_Sauce_TestFilterNameAtoZ");
@@ -41,6 +41,8 @@ public class TC_Sauce_TestFilterNameAtoZ extends TestBase {
 	@Test
 	public void test_FilterNameAtoZ() throws IOException {
 
+		System.out.println("Test Started: TC_Sauce_TestFilterNameAtoZ");
+		
 		String expectedURL = reqTCDataList.get(1);
 		String filter = reqTCDataList.get(2);
 		String expectedList = reqTCDataList.get(3);
@@ -64,12 +66,10 @@ public class TC_Sauce_TestFilterNameAtoZ extends TestBase {
 
 	@AfterMethod
 	public void tearDown() throws InterruptedException {
+		
+		System.out.println("TearDown Started: TC_Sauce_TestFilterNameAtoZ");
 
-		Thread.sleep(5000);
-		System.out.println("tearDown Started");
-
-		if (driver != null)
-			driver.quit();
+		quitDriver();
 
 	}
 

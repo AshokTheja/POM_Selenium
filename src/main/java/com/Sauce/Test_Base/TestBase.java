@@ -20,8 +20,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 
-	public static WebDriver driver;
-	public static WebDriverWait wait;
+	protected static WebDriver driver;
+	protected static WebDriverWait wait;
 	public static Properties prop;
 
 	// Initialization Method
@@ -91,6 +91,12 @@ public class TestBase {
 
 		driver.get(url);
 
+	}
+
+	public void quitDriver() {
+		if (driver != null) {
+			driver.quit();
+		}
 	}
 
 }
